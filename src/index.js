@@ -62,7 +62,7 @@ io.on('connection', (socket) => {
 
         socket.join(user.room);
         socket.emit('serverMsg', generateMessage("Admin", welcomeMessage))
-        socket.broadcast.to(user.room).emit('serverMsg', generateMessage(user.username, `${user.username}, has joined the Room!`))
+        socket.broadcast.to(user.room).emit('serverMsg', generateMessage("Admin", `${user.username}, has joined the Room!`))
         io.to(user.room).emit('activeUsers', user.room, getUserInRoom(user.room))
     })
 
