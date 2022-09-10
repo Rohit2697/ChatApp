@@ -1,0 +1,36 @@
+form {
+    width: 200px !important;
+    height: 200px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    /* text-align: center; */
+    margin-top: 30vh !important;
+    padding-top: 5px !important;
+
+}
+
+button#joinRoom {
+    width: 100px !important;
+}
+
+#typingSection {
+    display: flex !important;
+     justify-content: flex-end !important; 
+    /* height: 50px; */
+    /* width: fit-content; */
+    height: fit-content !important;
+    gap: 10px !important;
+}
+
+#messageinput {
+    width: 400px !important;
+    height: fit-content !important;
+    /* margin-top: 10px; */
+
+}
+
+#sendMsg,
+#semdLocation {
+    height: fit-content !important;
+}
